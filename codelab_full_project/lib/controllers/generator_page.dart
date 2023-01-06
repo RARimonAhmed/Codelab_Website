@@ -1,4 +1,5 @@
 import 'package:codelab_full_project/controllers/app_state.dart';
+import 'package:codelab_full_project/controllers/history_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,7 @@ class GenaratorPage extends StatelessWidget {
         children: [
           Expanded(
             flex: 3,
-            child: HistoryListView(),
+            child: HistroyListView(),
           ),
           SizedBox(
             height: 10,

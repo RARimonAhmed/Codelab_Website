@@ -1,6 +1,8 @@
 import 'package:codelab_full_project/controllers/generator_page.dart';
 import 'package:flutter/material.dart';
 
+import '../controllers/favorite_pages.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 

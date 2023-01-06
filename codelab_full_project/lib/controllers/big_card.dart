@@ -15,6 +15,27 @@ class BigCard extends StatelessWidget {
       color: theme.colorScheme.primary,
       child: Padding(
         padding: EdgeInsets.all(20),
+        child: AnimatedSize(
+          duration: Duration(milliseconds: 200),
+          child: MergeSemantics(
+            child: Wrap(
+              children: [
+                Text(
+                  pair.first,
+                  style: style.copyWith(
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                Text(
+                  pair.second,
+                  style: style.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
